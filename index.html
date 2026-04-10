@@ -708,6 +708,16 @@
     animation: gift-wiggle 0.6s ease-in-out infinite;
   }
 
+  /* Bono modal has a light gold background -> force dark text for readability */
+  .modal-backdrop.bono-mode .modal-text {
+    color: #3a1f00;
+    font-weight: 700;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  }
+  .modal-backdrop.bono-mode .modal-heart {
+    filter: drop-shadow(0 2px 4px rgba(139, 69, 19, 0.4));
+  }
+
   .bono-amount {
     display: block;
     margin: 16px auto 8px;
@@ -782,7 +792,6 @@
 </style>
 </head>
 <body>
-
 
   <!-- Radio state for CSS-only modals (no JS required) -->
   <input type="radio" name="modal-state" id="modal-none" checked class="modal-radio">
@@ -1013,150 +1022,6 @@ Tu Papá 💙💛❤️</p>
     Hecho con amor infinito por tu Papá
     <span class="hearts">&#128158; &#128156; &#128150;</span>
   </footer>
-
-  <div class="modal-backdrop" id="memory-1">
-    <a href="#!" class="modal-bg-close" aria-label="Cerrar"></a>
-    <div class="modal">
-      <a href="#!" class="modal-close" aria-label="Cerrar">&times;</a>
-      <span class="modal-emoji">👶</span>
-      <h2 class="modal-title">Tu llegada al mundo</h2>
-      <p class="modal-text">En el 2009, en nuestra tierra colombiana, llegaste tú para cambiar mi vida para siempre.
-
-El día que te vi por primera vez entendí lo que era el amor más grande del universo. 🇨🇴💙</p>
-      <div class="modal-heart">&#128150;</div>
-    </div>
-  </div>
-  <div class="modal-backdrop" id="memory-2">
-    <a href="#!" class="modal-bg-close" aria-label="Cerrar"></a>
-    <div class="modal">
-      <a href="#!" class="modal-close" aria-label="Cerrar">&times;</a>
-      <span class="modal-emoji">😄</span>
-      <h2 class="modal-title">Tus primeras risas</h2>
-      <p class="modal-text">Tu risa de bebé era la melodía más hermosa del mundo.
-
-Recuerdo cada carcajada, cada sonrisa sin dientes, cada vez que me mirabas y me hacías sentir el papá más afortunado del planeta. 🥰</p>
-      <div class="modal-heart">&#128150;</div>
-    </div>
-  </div>
-  <div class="modal-backdrop" id="memory-3">
-    <a href="#!" class="modal-bg-close" aria-label="Cerrar"></a>
-    <div class="modal">
-      <a href="#!" class="modal-close" aria-label="Cerrar">&times;</a>
-      <span class="modal-emoji">🎒</span>
-      <h2 class="modal-title">Primer día de colegio 🇨🇴</h2>
-      <p class="modal-text">Tu primer día de colegio en Colombia.
-
-Ibas con tu uniforme, tu lonchera y una mezcla de nervios y emoción. Yo iba más nervioso que tú, pero tú saliste corriendo a conocer amigos. Así de valiente has sido siempre. 🎒📚</p>
-      <div class="modal-heart">&#128150;</div>
-    </div>
-  </div>
-  <div class="modal-backdrop" id="memory-4">
-    <a href="#!" class="modal-bg-close" aria-label="Cerrar"></a>
-    <div class="modal">
-      <a href="#!" class="modal-close" aria-label="Cerrar">&times;</a>
-      <span class="modal-emoji">🎄</span>
-      <h2 class="modal-title">Navidades en familia</h2>
-      <p class="modal-text">Las navidades colombianas con la familia, los buñuelos, la natilla, los aguinaldos, la novena...
-
-Esas noches de diciembre con luces, música y abrazos quedaron grabadas en mi corazón. Ahí aprendiste lo que es ser familia. 🎄✨</p>
-      <div class="modal-heart">&#128150;</div>
-    </div>
-  </div>
-  <div class="modal-backdrop" id="memory-5">
-    <a href="#!" class="modal-bg-close" aria-label="Cerrar"></a>
-    <div class="modal">
-      <a href="#!" class="modal-close" aria-label="Cerrar">&times;</a>
-      <span class="modal-emoji">✈️</span>
-      <h2 class="modal-title">Nos vamos a USA</h2>
-      <p class="modal-text">El día que te dije que nos íbamos a Estados Unidos no olvidaré nunca tu cara.
-
-Tenías solo 12 años y una vida entera en Colombia. Pero confiaste en mí. Empacamos sueños, recuerdos y esperanza en una sola maleta. ✈️🌎</p>
-      <div class="modal-heart">&#128150;</div>
-    </div>
-  </div>
-  <div class="modal-backdrop" id="memory-6">
-    <a href="#!" class="modal-bg-close" aria-label="Cerrar"></a>
-    <div class="modal">
-      <a href="#!" class="modal-close" aria-label="Cerrar">&times;</a>
-      <span class="modal-emoji">🌅</span>
-      <h2 class="modal-title">Nuevo comienzo 🇺🇸</h2>
-      <p class="modal-text">Llegar a Estados Unidos fue empezar de cero.
-
-Todo era nuevo: el idioma, la comida, el frío, los olores, hasta el cielo se veía distinto. Pero lo enfrentamos juntos, y cada día me demostraste que tenías más fuerza de la que yo imaginaba. 🌅💪</p>
-      <div class="modal-heart">&#128150;</div>
-    </div>
-  </div>
-  <div class="modal-backdrop" id="memory-7">
-    <a href="#!" class="modal-bg-close" aria-label="Cerrar"></a>
-    <div class="modal">
-      <a href="#!" class="modal-close" aria-label="Cerrar">&times;</a>
-      <span class="modal-emoji">📚</span>
-      <h2 class="modal-title">Aprendiendo inglés</h2>
-      <p class="modal-text">Verte llegar a una escuela donde no entendías ni una palabra y salir adelante... eso no lo hace cualquiera.
-
-Te caíste, te levantaste, preguntaste, practicaste. Hoy hablas dos idiomas y tienes dos culturas en el corazón. Eres imparable. 🗣️🇺🇸</p>
-      <div class="modal-heart">&#128150;</div>
-    </div>
-  </div>
-  <div class="modal-backdrop" id="memory-8">
-    <a href="#!" class="modal-bg-close" aria-label="Cerrar"></a>
-    <div class="modal">
-      <a href="#!" class="modal-close" aria-label="Cerrar">&times;</a>
-      <span class="modal-emoji">💪</span>
-      <h2 class="modal-title">Tu fuerza</h2>
-      <p class="modal-text">Has extrañado a Colombia, a tu familia, a tus amigos. Has vivido momentos difíciles lejos de casa.
-
-Y aún así, nunca te rendiste. Esa es la fuerza más grande que puede tener una persona: seguir adelante con el corazón intacto. Estoy orgulloso de ti. 💪❤️</p>
-      <div class="modal-heart">&#128150;</div>
-    </div>
-  </div>
-  <div class="modal-backdrop" id="memory-9">
-    <a href="#!" class="modal-bg-close" aria-label="Cerrar"></a>
-    <div class="modal">
-      <a href="#!" class="modal-close" aria-label="Cerrar">&times;</a>
-      <span class="modal-emoji">🌟</span>
-      <h2 class="modal-title">El joven que eres hoy</h2>
-      <p class="modal-text">Mírate ahora: un joven de 17 años, bilingüe, valiente, noble, con un corazón enorme.
-
-No importa cuánto crezcas, para mí siempre serás mi niño. Pero hoy quiero decirte: estoy orgulloso del hombre en el que te estás convirtiendo. 🌟👑</p>
-      <div class="modal-heart">&#128150;</div>
-    </div>
-  </div>
-  <div class="modal-backdrop" id="memory-10">
-    <a href="#!" class="modal-bg-close" aria-label="Cerrar"></a>
-    <div class="modal">
-      <a href="#!" class="modal-close" aria-label="Cerrar">&times;</a>
-      <span class="modal-emoji">🚀</span>
-      <h2 class="modal-title">Lo que viene: tus 17</h2>
-      <p class="modal-text">17 años. La vida está apenas empezando.
-
-Vienen sueños por cumplir, amores por vivir, lugares por conocer, metas por alcanzar. Y yo voy a estar aquí, siempre, en cada paso. Nunca olvides de dónde vienes, nunca dudes hasta dónde puedes llegar.
-
-FELIZ CUMPLEAÑOS, HIJO. TE AMO INFINITO. 🚀🎂🎉</p>
-      <div class="modal-heart">&#128150;</div>
-    </div>
-  </div>
-  <div class="modal-backdrop bono-mode" id="memory-11">
-    <a href="#!" class="modal-bg-close" aria-label="Cerrar"></a>
-    <div class="modal">
-      <a href="#!" class="modal-close" aria-label="Cerrar">&times;</a>
-      <span class="modal-emoji">🎁</span>
-      <h2 class="modal-title">¡SORPRESA ESPECIAL!</h2>
-      <div class="bono-amount">$100 USD</div>
-        <p class="modal-text">¡FELIZ CUMPLEAÑOS, HIJO!
-
-🎉 Revisa tu correo electrónico 📧
-
-Te acaba de llegar un BONO DE REGALO muy especial de tu parte. $100 USD para que te des el gusto que quieras, te compres ese capricho, salgas con tus amigos o lo guardes para algo grande.
-
-Te lo mereces todo y más. Eres el mejor hijo del mundo.
-
-Con todo mi amor,
-Tu Papá 💙💛❤️</p>
-      <div class="modal-heart">&#128150;</div>
-    </div>
-  </div>
-  </div>
 
 <script>
   /* =======================================================================
