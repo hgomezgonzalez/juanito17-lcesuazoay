@@ -443,6 +443,9 @@
   .postit.gold {
     background: linear-gradient(135deg, #fff3a0 0%, #ffd700 40%, #ffb300 70%, #ff8c00 100%);
     background-size: 200% 200%;
+    grid-column: 1 / -1;
+    max-width: 60%;
+    justify-self: center;
     box-shadow:
       0 0 0 2px #fff8cc,
       2px 2px 6px rgba(255, 140, 0, 0.5),
@@ -565,8 +568,7 @@
   #mem-7:checked ~ .modal-backdrop[data-modal="mem-7"],
   #mem-8:checked ~ .modal-backdrop[data-modal="mem-8"],
   #mem-9:checked ~ .modal-backdrop[data-modal="mem-9"],
-  #mem-10:checked ~ .modal-backdrop[data-modal="mem-10"],
-  #mem-11:checked ~ .modal-backdrop[data-modal="mem-11"] {
+  #mem-10:checked ~ .modal-backdrop[data-modal="mem-10"] {
     display: flex;
   }
   .modal-backdrop.show {
@@ -863,7 +865,6 @@
   <input type="radio" name="modal-state" id="mem-8" class="modal-radio">
   <input type="radio" name="modal-state" id="mem-9" class="modal-radio">
   <input type="radio" name="modal-state" id="mem-10" class="modal-radio">
-  <input type="radio" name="modal-state" id="mem-11" class="modal-radio">
 
   <header>
     <div class="title-badge-wrap">
@@ -883,51 +884,46 @@
       <span class="tap-hint">toca</span>
     </label>
     <label for="mem-2" class="postit c2">
-      <span class="emoji">😄</span>
-      <div class="postit-title">Tus primeras risas</div>
+      <span class="emoji">🦖</span>
+      <div class="postit-title">Risas con Barney</div>
       <span class="tap-hint">toca</span>
     </label>
     <label for="mem-3" class="postit c3">
-      <span class="emoji">🎒</span>
-      <div class="postit-title">Primer día de colegio 🇨🇴</div>
+      <span class="emoji">🧠</span>
+      <div class="postit-title">Tu mente curiosa</div>
       <span class="tap-hint">toca</span>
     </label>
     <label for="mem-4" class="postit c4">
-      <span class="emoji">🎄</span>
-      <div class="postit-title">Navidades en familia</div>
+      <span class="emoji">🩹</span>
+      <div class="postit-title">Tu corazón cuidador</div>
       <span class="tap-hint">toca</span>
     </label>
     <label for="mem-5" class="postit c5">
-      <span class="emoji">✈️</span>
-      <div class="postit-title">Nos vamos a USA</div>
+      <span class="emoji">🕊️</span>
+      <div class="postit-title">Tu bautizo</div>
       <span class="tap-hint">toca</span>
     </label>
     <label for="mem-6" class="postit c6">
-      <span class="emoji">🌅</span>
-      <div class="postit-title">Nuevo comienzo 🇺🇸</div>
+      <span class="emoji">🧩</span>
+      <div class="postit-title">Tu concentración</div>
       <span class="tap-hint">toca</span>
     </label>
     <label for="mem-7" class="postit c7">
-      <span class="emoji">📚</span>
-      <div class="postit-title">Aprendiendo inglés</div>
+      <span class="emoji">🎓</span>
+      <div class="postit-title">Tu forma única de aprender</div>
       <span class="tap-hint">toca</span>
     </label>
     <label for="mem-8" class="postit c8">
-      <span class="emoji">💪</span>
-      <div class="postit-title">Tu fuerza</div>
-      <span class="tap-hint">toca</span>
-    </label>
-    <label for="mem-9" class="postit c9">
       <span class="emoji">🌟</span>
       <div class="postit-title">El joven que eres hoy</div>
       <span class="tap-hint">toca</span>
     </label>
-    <label for="mem-10" class="postit c10">
+    <label for="mem-9" class="postit c9">
       <span class="emoji">🚀</span>
       <div class="postit-title">Lo que viene: tus 17</div>
       <span class="tap-hint">toca</span>
     </label>
-    <label for="mem-11" class="postit c11 gold">
+    <label for="mem-10" class="postit c10 gold">
       <span class="emoji">🎁</span>
       <div class="postit-title">¡SORPRESA ESPECIAL!</div>
       <span class="gold-badge">✨ TÓCAME ✨</span>
@@ -940,9 +936,11 @@
       <label for="modal-none" class="modal-close" aria-label="Cerrar">&times;</label>
       <span class="modal-emoji">👶</span>
       <h2 class="modal-title">Tu llegada al mundo</h2>
-      <p class="modal-text">En el 2009, en nuestra tierra colombiana, llegaste tú para cambiar mi vida para siempre.
+      <p class="modal-text">Tu llegada al mundo es uno de los recuerdos más hermosos de mi vida.
 
-El día que te vi por primera vez entendí lo que era el amor más grande del universo. 🇨🇴💙</p>
+Llegaste un Viernes Santo, y fue tan rápido tu deseo de venir a este mundo que ni siquiera alcanzaste a nacer en la cama de parto.
+
+Eras el varón tan anhelado, y desde ese mismo instante empecé a soñar con tantos momentos a tu lado, entre ellos, jugar fútbol contigo. ⚽💙</p>
       <div class="modal-heart">&#128150;</div>
     </div>
   </div>
@@ -950,11 +948,13 @@ El día que te vi por primera vez entendí lo que era el amor más grande del un
     <label for="modal-none" class="modal-bg-close" aria-label="Cerrar"></label>
     <div class="modal">
       <label for="modal-none" class="modal-close" aria-label="Cerrar">&times;</label>
-      <span class="modal-emoji">😄</span>
-      <h2 class="modal-title">Tus primeras risas</h2>
-      <p class="modal-text">Tu risa de bebé era la melodía más hermosa del mundo.
+      <span class="modal-emoji">🦖</span>
+      <h2 class="modal-title">Risas con Barney</h2>
+      <p class="modal-text">En la casa del tío Orlando quedaron grabados recuerdos muy bonitos de tu infancia.
 
-Recuerdo cada carcajada, cada sonrisa sin dientes, cada vez que me mirabas y me hacías sentir el papá más afortunado del planeta. 🥰</p>
+Allí, una novia de Julián, tu padrino, lograba sacarte carcajadas maravillosas cuando aún ni siquiera gateabas.
+
+Y en esa misma casa estaba Barney, ese dinosaurio que tanto te encantaba; cuando ya caminabas, lo tomabas feliz y pedías que te tomaran una foto con él, apenas tenías 2 años. 🦕😄</p>
       <div class="modal-heart">&#128150;</div>
     </div>
   </div>
@@ -962,11 +962,15 @@ Recuerdo cada carcajada, cada sonrisa sin dientes, cada vez que me mirabas y me 
     <label for="modal-none" class="modal-bg-close" aria-label="Cerrar"></label>
     <div class="modal">
       <label for="modal-none" class="modal-close" aria-label="Cerrar">&times;</label>
-      <span class="modal-emoji">🎒</span>
-      <h2 class="modal-title">Primer día de colegio 🇨🇴</h2>
-      <p class="modal-text">Tu primer día de colegio en Colombia.
+      <span class="modal-emoji">🧠</span>
+      <h2 class="modal-title">Tu mente curiosa</h2>
+      <p class="modal-text">Hay recuerdos tuyos que desde pequeño ya mostraban la clase de persona tan especial que eres.
 
-Ibas con tu uniforme, tu lonchera y una mezcla de nervios y emoción. Yo iba más nervioso que tú, pero tú saliste corriendo a conocer amigos. Así de valiente has sido siempre. 🎒📚</p>
+Recuerdo una vez en Bachué, cuando visitamos a una niña, hija de una amiga de tu mamá. Tú apenas tenías unos 3 años. Ella tenía una moto eléctrica, pero aunque estaba sobre ella, no sabía cómo prenderla ni moverla.
+
+Tú, a lo lejos, la observabas con curiosidad, te acercabas poco a poco, te agachabas, caminabas a su alrededor y la analizabas con esa atención tan tuya. Después de unos minutos, encontraste la manera de encenderla y hacerla funcionar.
+
+Nadie te lo pidió; simplemente lo hiciste porque en ti ya vivía esa facilidad para analizar, comprender y resolver. Ese don tan bonito que tienes es algo que nunca debes dejar de incentivar. 🔍✨</p>
       <div class="modal-heart">&#128150;</div>
     </div>
   </div>
@@ -974,11 +978,13 @@ Ibas con tu uniforme, tu lonchera y una mezcla de nervios y emoción. Yo iba má
     <label for="modal-none" class="modal-bg-close" aria-label="Cerrar"></label>
     <div class="modal">
       <label for="modal-none" class="modal-close" aria-label="Cerrar">&times;</label>
-      <span class="modal-emoji">🎄</span>
-      <h2 class="modal-title">Navidades en familia</h2>
-      <p class="modal-text">Las navidades colombianas con la familia, los buñuelos, la natilla, los aguinaldos, la novena...
+      <span class="modal-emoji">🩹</span>
+      <h2 class="modal-title">Tu corazón cuidador</h2>
+      <p class="modal-text">Recuerdo cuando tuve aquel esguince de tobillo. Tú tendrías casi 3 años, y aun siendo tan pequeño, me acompañabas a todo lado, siempre pendiente de mí.
 
-Esas noches de diciembre con luces, música y abrazos quedaron grabadas en mi corazón. Ahí aprendiste lo que es ser familia. 🎄✨</p>
+Sin que yo te dijera nada, ni te pidiera que lo hicieras, estabas alerta para alcanzarme las muletas, para ayudarme y para asegurarte, a tu manera, de que yo tuviera cuidado con mi pie.
+
+Desde tan niño ya demostrabas ese amor tan puro y especial hacia mí, un amor que siempre ha llenado mi corazón de felicidad. ❤️</p>
       <div class="modal-heart">&#128150;</div>
     </div>
   </div>
@@ -986,11 +992,15 @@ Esas noches de diciembre con luces, música y abrazos quedaron grabadas en mi co
     <label for="modal-none" class="modal-bg-close" aria-label="Cerrar"></label>
     <div class="modal">
       <label for="modal-none" class="modal-close" aria-label="Cerrar">&times;</label>
-      <span class="modal-emoji">✈️</span>
-      <h2 class="modal-title">Nos vamos a USA</h2>
-      <p class="modal-text">El día que te dije que nos íbamos a Estados Unidos no olvidaré nunca tu cara.
+      <span class="modal-emoji">🕊️</span>
+      <h2 class="modal-title">Tu bautizo</h2>
+      <p class="modal-text">Recuerdo mucho tu bautizo, cuando estabas cumpliendo tu primer año de vida.
 
-Tenías solo 12 años y una vida entera en Colombia. Pero confiaste en mí. Empacamos sueños, recuerdos y esperanza en una sola maleta. ✈️🌎</p>
+En ese instante en que el padre derramó el agua fría sobre tu cabeza, mientras muchos niños suelen llorar en una ceremonia así, tú permaneciste tranquilo, sin derramar una sola lágrima.
+
+Desde bebé ya dejabas ver esa fortaleza que siempre te ha distinguido, esa capacidad de mantenerte sereno y valiente aun en situaciones que para otros pueden ser difíciles.
+
+Ojalá nunca dejes de cultivar esa fuerza tan bonita que Dios puso en ti desde tus primeros días. 💧🛡️</p>
       <div class="modal-heart">&#128150;</div>
     </div>
   </div>
@@ -998,11 +1008,15 @@ Tenías solo 12 años y una vida entera en Colombia. Pero confiaste en mí. Empa
     <label for="modal-none" class="modal-bg-close" aria-label="Cerrar"></label>
     <div class="modal">
       <label for="modal-none" class="modal-close" aria-label="Cerrar">&times;</label>
-      <span class="modal-emoji">🌅</span>
-      <h2 class="modal-title">Nuevo comienzo 🇺🇸</h2>
-      <p class="modal-text">Llegar a Estados Unidos fue empezar de cero.
+      <span class="modal-emoji">🧩</span>
+      <h2 class="modal-title">Tu concentración</h2>
+      <p class="modal-text">Recuerdo que en casa, con apenas 3 años, ya eras capaz de tener tiempos largos de concentración que admiraban a todos.
 
-Todo era nuevo: el idioma, la comida, el frío, los olores, hasta el cielo se veía distinto. Pero lo enfrentamos juntos, y cada día me demostraste que tenías más fuerza de la que yo imaginaba. 🌅💪</p>
+Te enfocabas por completo, ya fuera pintando todo un tablero o buscando armar rompecabezas, sin rendirte fácilmente.
+
+Esa capacidad de mantener la atención y perseverar hasta encontrar una solución ya mostraba una cualidad muy especial en ti: tu enfoque y tu constancia.
+
+Nunca dejes de fortalecer ese don, porque será una gran herramienta para superar los problemas y desafíos que la vida ponga frente a ti. 🎨💪</p>
       <div class="modal-heart">&#128150;</div>
     </div>
   </div>
@@ -1010,27 +1024,21 @@ Todo era nuevo: el idioma, la comida, el frío, los olores, hasta el cielo se ve
     <label for="modal-none" class="modal-bg-close" aria-label="Cerrar"></label>
     <div class="modal">
       <label for="modal-none" class="modal-close" aria-label="Cerrar">&times;</label>
-      <span class="modal-emoji">📚</span>
-      <h2 class="modal-title">Aprendiendo inglés</h2>
-      <p class="modal-text">Verte llegar a una escuela donde no entendías ni una palabra y salir adelante... eso no lo hace cualquiera.
+      <span class="modal-emoji">🎓</span>
+      <h2 class="modal-title">Tu forma única de aprender</h2>
+      <p class="modal-text">Recuerdo que en el colegio muchas veces los profesores se quejaban de ti porque no escribías demasiado o porque tus cuadernos no se veían como ellos esperaban. Hubo incluso personas cercanas que pensaron que podrías perder el año.
 
-Te caíste, te levantaste, preguntaste, practicaste. Hoy hablas dos idiomas y tienes dos culturas en el corazón. Eres imparable. 🗣️🇺🇸</p>
+Sin embargo, una y otra vez les demostraste que estaban equivocados: llegaban las evaluaciones y sobresalías, superabas a muchos y avanzabas sin dificultad.
+
+Siempre has tenido una forma muy tuya de entender y aprender, sin necesidad de hablar de más ni de demostrarle nada a nadie. Aunque en algunos momentos te subestimaron, tus resultados fueron los que hablaron por ti y dejaron claro todo lo que llevas dentro.
+
+Incluso en pandemia recuerdo una discusión con una profesora del Francisco José de Caldas, quien aseguraba que ni ella misma podría resolver un examen de la forma en que tú lo hiciste. Eso solo confirmaba esa capacidad tan especial que tienes para comprender, retener y organizar las cosas en tu mente, sin necesidad de llenar cuadernos enteros de repeticiones.
+
+Ese don que Dios te ha dado debes seguir fortaleciéndolo cada día, porque bien cultivado puede llevarte muy lejos y ayudarte a ser el mejor en todo lo que te propongas. 📚⭐</p>
       <div class="modal-heart">&#128150;</div>
     </div>
   </div>
   <div class="modal-backdrop" data-modal="mem-8">
-    <label for="modal-none" class="modal-bg-close" aria-label="Cerrar"></label>
-    <div class="modal">
-      <label for="modal-none" class="modal-close" aria-label="Cerrar">&times;</label>
-      <span class="modal-emoji">💪</span>
-      <h2 class="modal-title">Tu fuerza</h2>
-      <p class="modal-text">Has extrañado a Colombia, a tu familia, a tus amigos. Has vivido momentos difíciles lejos de casa.
-
-Y aún así, nunca te rendiste. Esa es la fuerza más grande que puede tener una persona: seguir adelante con el corazón intacto. Estoy orgulloso de ti. 💪❤️</p>
-      <div class="modal-heart">&#128150;</div>
-    </div>
-  </div>
-  <div class="modal-backdrop" data-modal="mem-9">
     <label for="modal-none" class="modal-bg-close" aria-label="Cerrar"></label>
     <div class="modal">
       <label for="modal-none" class="modal-close" aria-label="Cerrar">&times;</label>
@@ -1042,7 +1050,7 @@ No importa cuánto crezcas, para mí siempre serás mi niño. Pero hoy quiero de
       <div class="modal-heart">&#128150;</div>
     </div>
   </div>
-  <div class="modal-backdrop" data-modal="mem-10">
+  <div class="modal-backdrop" data-modal="mem-9">
     <label for="modal-none" class="modal-bg-close" aria-label="Cerrar"></label>
     <div class="modal">
       <label for="modal-none" class="modal-close" aria-label="Cerrar">&times;</label>
@@ -1056,7 +1064,7 @@ FELIZ CUMPLEAÑOS, HIJO. TE AMO INFINITO. 🚀🎂🎉</p>
       <div class="modal-heart">&#128150;</div>
     </div>
   </div>
-  <div class="modal-backdrop bono-mode" data-modal="mem-11">
+  <div class="modal-backdrop bono-mode" data-modal="mem-10">
     <label for="modal-none" class="modal-bg-close" aria-label="Cerrar"></label>
     <div class="modal">
       <label for="modal-none" class="modal-close" aria-label="Cerrar">&times;</label>
@@ -1067,7 +1075,7 @@ FELIZ CUMPLEAÑOS, HIJO. TE AMO INFINITO. 🚀🎂🎉</p>
 
 🎉 Revisa tu correo electrónico 📧
 
-Te acaba de llegar un BONO DE REGALO muy especial de tu parte. $100 USD para que te des el gusto que quieras, te compres ese capricho, salgas con tus amigos o lo guardes para algo grande.
+Te acaba de llegar un BONO DE REGALO muy especial de Amazon por $100 USD para que te des el gusto que quieras, te compres ese capricho, salgas con tus amigos o lo guardes para algo grande.
 
 Te lo mereces todo y más. Eres el mejor hijo del mundo.
 
